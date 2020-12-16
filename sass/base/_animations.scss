@@ -1,14 +1,50 @@
-@keyframes fadeInLeft {
+.fadeInLeft {
+    animation: fadeInFromLeft 1s;  
+}
+
+@keyframes fadeInFromLeft {
 
     0% {
-        
-    }
-
-    50% {
-
+        opacity: 0;
+        transform: translateX(-20px);
     }
 
     100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }    
+}
 
+.fadeInRight {
+    animation: fadeInFromRight 1s;  
+}
+
+@keyframes fadeInFromRight {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
     }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }    
+}
+
+.fadeInBottom {
+    animation: fadeInFromBottom 1s;  
+}
+
+@keyframes fadeInFromBottom {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }    
 }

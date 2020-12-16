@@ -3,6 +3,21 @@
     
     &__card {                
 
+        padding: 4rem 4rem 0 4rem;
+
+        @include respond(tab-portrait){
+            padding: 4rem 1rem 0 1rem;
+        }
+
+        &--natours {             
+            background-image: linear-gradient(to right bottom, #e6dacea8, #e6dace6b), url(/img/natours.JPG);       
+        }
+
+        &--hackathon {             
+            background-image: linear-gradient(to right bottom, #e6dacea8, #e6dace6b), url(/img/travel.JPG);     
+        }
+        
+
         &--image {
             height: 10rem;
             width: 15rem;

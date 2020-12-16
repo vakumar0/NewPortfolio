@@ -1,7 +1,35 @@
-@keyframes fadeInLeft {
-  0% { }
-  50% { }
-  100% { } }
+.fadeInLeft {
+  animation: fadeInFromLeft 1s; }
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.fadeInRight {
+  animation: fadeInFromRight 1s; }
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.fadeInBottom {
+  animation: fadeInFromBottom 1s; }
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
 
 *,
 *::after,
@@ -56,6 +84,9 @@ p {
     display: table;
     clear: both; }
 
+.bold {
+  font-weight: 700; }
+
 .blue--square-box {
   height: 15px;
   width: 15px;
@@ -104,11 +135,12 @@ p {
 .button__link, .button__link:visited {
   display: inline-flex;
   padding: .5rem 1rem;
-  margin-left: 3rem;
   border-bottom: 1px solid #0050ff;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all .4s; }
+  .button__link:not(:last-child), .button__link:visited:not(:last-child) {
+    margin-right: 4rem; }
   @media screen and (max-width: 56.25em) {
     .button__link, .button__link:visited {
       margin-left: 0;
@@ -293,34 +325,43 @@ p {
 
 .project {
   margin-top: 8rem; }
-  .project__card--image {
-    height: 10rem;
-    width: 15rem;
-    border-radius: 100rem;
-    background-color: olivedrab;
-    margin: auto; }
-  .project__card--shadow {
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-  .project__card--links {
-    display: inline-flex; }
-  .project__card--link {
-    display: inline-flex; }
-  .project__card--image1 {
-    background-image: url(/img/natours.JPG);
-    background-size: cover;
-    background-position: center; }
-  .project__card--image2 {
-    background-image: url(/img/portfolio.JPG);
-    background-size: cover;
-    background-position: center; }
-  .project__card--image3 {
-    background-image: url(/img/travel.JPG);
-    background-size: cover;
-    background-position: center; }
-  .project__card--image4 {
-    background-image: url(/img/hackathon.JPG);
-    background-size: cover;
-    background-position: center; }
+  .project__card {
+    padding: 4rem 4rem 0 4rem; }
+    @media screen and (max-width: 56.25em) {
+      .project__card {
+        padding: 4rem 1rem 0 1rem; } }
+    .project__card--natours {
+      background-image: linear-gradient(to right bottom, #e6dacea8, #e6dace6b), url(/img/natours.JPG); }
+    .project__card--hackathon {
+      background-image: linear-gradient(to right bottom, #e6dacea8, #e6dace6b), url(/img/travel.JPG); }
+    .project__card--image {
+      height: 10rem;
+      width: 15rem;
+      border-radius: 100rem;
+      background-color: olivedrab;
+      margin: auto; }
+    .project__card--shadow {
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .project__card--links {
+      display: inline-flex; }
+    .project__card--link {
+      display: inline-flex; }
+    .project__card--image1 {
+      background-image: url(/img/natours.JPG);
+      background-size: cover;
+      background-position: center; }
+    .project__card--image2 {
+      background-image: url(/img/portfolio.JPG);
+      background-size: cover;
+      background-position: center; }
+    .project__card--image3 {
+      background-image: url(/img/travel.JPG);
+      background-size: cover;
+      background-position: center; }
+    .project__card--image4 {
+      background-image: url(/img/hackathon.JPG);
+      background-size: cover;
+      background-position: center; }
 
 .work-experience {
   margin-top: 15rem; }
@@ -336,8 +377,8 @@ p {
     margin: 2rem 3rem; }
 
 .skills {
-  background-color: #0050ff;
-  color: #fff;
+  background-color: #e6dace;
+  color: #000;
   margin-top: 15rem; }
   @media screen and (max-width: 56.25em) {
     .skills {
@@ -351,4 +392,6 @@ p {
       @media screen and (max-width: 56.25em) {
         .skills ul li {
           font-size: 3rem;
-          padding: 2rem 3rem; } }
+          padding: 2rem 3rem;
+          height: 8rem;
+          width: 10rem; } }

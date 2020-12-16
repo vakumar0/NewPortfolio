@@ -3,11 +3,14 @@
     &__link, &__link:visited {
         display: inline-flex;
         padding: .5rem 1rem;   
-        margin-left: 3rem;        
+        // margin-left: 3rem;        
         border-bottom: 1px solid #0050ff;
         font-size: 1.2rem;        
         cursor: pointer;    
         transition: all .4s; 
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
         
         @include respond(tab-portrait) {
             margin-left: 0;
