@@ -9,11 +9,15 @@ h1 {
 
 h2 {
     font-size: 1.7rem;
-    font-weight: 400;
+    font-weight: 700;
 
     @include respond(tab-portrait) {
         font-size: 1.4rem;
     }
+}
+
+p {
+    font-size: 1.3rem;
 }
 
 .center-align {

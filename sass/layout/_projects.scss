@@ -1,0 +1,50 @@
+.project {
+    margin-top: 8rem;     
+    
+    &__card {                
+
+        &--image {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 100rem;
+            background-color: olivedrab;
+            margin: auto;
+
+            // @include respond(tab-portrait) {
+            //     height: 10rem;
+            //     width: 10rem;
+            // }
+        }        
+
+        &--shadow {
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        }
+
+        &--links {
+            display: inline-flex;
+        }
+
+        &--link {
+            display: inline-flex;
+        }
+
+        &--image1 {
+            background-image: url(/img/natours.JPG);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--image2 {
+            background-image: url(/img/portfolio.JPG);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--image3 {
+            background-image: url(/img/hackathon.JPG);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    
+}

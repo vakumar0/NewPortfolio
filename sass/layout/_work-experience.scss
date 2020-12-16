@@ -1,0 +1,17 @@
+.work-experience {
+    
+    &__card {
+
+        &--title {
+            padding: 2rem 0 0 2rem;            
+        }
+
+        &--sub-title {
+            padding: 0 0 0 2rem;            
+        }
+
+        &--info {
+            margin: 2rem 3rem;
+        }
+    }
+}

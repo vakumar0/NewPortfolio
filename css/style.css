@@ -1,3 +1,8 @@
+@keyframes fadeInLeft {
+  0% { }
+  50% { }
+  100% { } }
+
 *,
 *::after,
 *::before {
@@ -21,10 +26,13 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
-  font-weight: 400; }
+  font-weight: 700; }
   @media screen and (max-width: 56.25em) {
     h2 {
       font-size: 1.4rem; } }
+
+p {
+  font-size: 1.3rem; }
 
 .center-align {
   text-align: center;
@@ -47,6 +55,12 @@ h2 {
   .blue__line--center {
     margin: 1.5rem auto; }
 
+.shadow {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+
+.wide-margin-top {
+  margin-top: 15rem; }
+
 .background-beige {
   background-color: #e6dace; }
 
@@ -61,6 +75,37 @@ h2 {
 
 .padding-large {
   padding: 9rem; }
+
+.margin--narrow {
+  margin: 2rem auto !important; }
+  @media screen and (max-width: 56.25em) {
+    .margin--narrow {
+      margin: 1rem auto !important; } }
+
+.button__link {
+  display: inline-flex;
+  padding: .5rem 1rem;
+  margin-left: 3rem;
+  border-bottom: 1px solid #0050ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all .4s; }
+  @media screen and (max-width: 56.25em) {
+    .button__link {
+      margin-left: 0;
+      background-color: #0050ff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      color: white;
+      border-radius: 2px; }
+      .button__link:not(:last-child) {
+        margin-right: 2rem; } }
+
+.button__link:hover {
+  background-color: #0050ff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  color: white;
+  border-radius: 2px;
+  transform: translateX(1rem); }
 
 .row {
   margin: 0 auto; }
@@ -81,7 +126,7 @@ h2 {
   .row .col-1-of-1 {
     width: 100%;
     float: left;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     display: inline-flex; }
     .row .col-1-of-1::after {
       content: "";
@@ -90,8 +135,7 @@ h2 {
   .row .col-1-of-2 {
     width: calc(90% / 2);
     float: left;
-    margin-bottom: 5rem;
-    margin-top: 15rem; }
+    margin-bottom: 6rem; }
     .row .col-1-of-2::after {
       content: "";
       display: table;
@@ -100,16 +144,21 @@ h2 {
       .row .col-1-of-2 {
         width: 100%;
         margin-top: 3rem; } }
+    .row .col-1-of-2--gutter {
+      margin-left: 5rem; }
+      @media screen and (max-width: 56.25em) {
+        .row .col-1-of-2--gutter {
+          margin-left: 0; } }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 10rem) / 3);
+    width: calc((100% - 2 * 6rem) / 3);
     float: left;
-    margin-bottom: 5rem; }
+    margin-bottom: 6rem; }
     .row .col-1-of-3::after {
       content: "";
       display: table;
       clear: both; }
     .row .col-1-of-3:not(:last-child) {
-      margin-right: 10rem; }
+      margin-right: 6rem; }
     @media screen and (max-width: 56.25em) {
       .row .col-1-of-3 {
         width: calc((100% - 2 * 10rem));
@@ -141,6 +190,15 @@ h2 {
 
 .primary-beige-light {
   background-color: #f4ece6; }
+
+.gutter-vertical-small {
+  margin-bottom: 2rem !important; }
+
+.gutter-vertical {
+  margin-bottom: 4rem !important; }
+
+.gutter-vertical-large {
+  margin-bottom: 6rem !important; }
 
 .header__heroSection {
   height: 80vh; }
@@ -174,7 +232,10 @@ h2 {
   width: 16rem;
   border-radius: 100rem;
   background-color: #777;
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  background-image: url(/img/dp_crop.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .header__social-media {
   background-color: #fff;
@@ -206,12 +267,36 @@ h2 {
 
 .project {
   margin-top: 8rem; }
-  .project__image--one {
-    background-image: url("/img/nat-7.jpg");
-    height: 200px; }
-  .project__image--two {
-    background-image: url("/img/nat-8.jpg");
-    height: 200px; }
-  .project__image--three {
-    background-image: url("/img/nat-9.jpg");
-    height: 200px; }
+  .project__card--image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100rem;
+    background-color: olivedrab;
+    margin: auto; }
+  .project__card--shadow {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .project__card--links {
+    display: inline-flex; }
+  .project__card--link {
+    display: inline-flex; }
+  .project__card--image1 {
+    background-image: url(/img/natours.JPG);
+    background-size: cover;
+    background-position: center; }
+  .project__card--image2 {
+    background-image: url(/img/portfolio.JPG);
+    background-size: cover;
+    background-position: center; }
+  .project__card--image3 {
+    background-image: url(/img/hackathon.JPG);
+    background-size: cover;
+    background-position: center; }
+
+.work-experience__card--title {
+  padding: 2rem 0 0 2rem; }
+
+.work-experience__card--sub-title {
+  padding: 0 0 0 2rem; }
+
+.work-experience__card--info {
+  margin: 2rem 3rem; }

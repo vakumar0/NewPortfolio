@@ -26,24 +26,31 @@
         width: calc(90% / 2);        
         float: left;           
         @include clearFix; 
-        margin-bottom: $gutter-vertical-large;        
-        margin-top: 15rem;
+        margin-bottom: $gutter-vertical-large;                
 
         @include respond(tab-portrait) {
             width: 100%;            
             margin-top: 3rem;
             
-        }       
+        }   
+        
+        &--gutter {
+            margin-left: 5rem;
+
+            @include respond (tab-portrait) {
+                margin-left: 0;
+            }
+        }
     }
 
     .col-1-of-3 {
-        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);     
+        width: calc((100% - 2 * #{$gutter-horizontal-small}) / 3);     
         float: left;   
         margin-bottom: $gutter-vertical-large;
         @include clearFix;
             
         &:not(:last-child) {
-            margin-right: $gutter-horizontal;
+            margin-right: $gutter-horizontal-small;
         }        
         
         @include respond(tab-portrait) {
@@ -88,4 +95,16 @@
 
 .primary-beige-light {
     background-color: $color-primary-beige-light;
+}
+
+.gutter-vertical-small {
+    margin-bottom: $gutter-vertical-small !important;
+}
+
+.gutter-vertical {
+    margin-bottom: $gutter-vertical !important;
+}
+
+.gutter-vertical-large {
+    margin-bottom: $gutter-vertical-large !important;
 }

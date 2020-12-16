@@ -1,0 +1,32 @@
+.button {
+
+    &__link {
+        display: inline-flex;
+        padding: .5rem 1rem;   
+        margin-left: 3rem;        
+        border-bottom: 1px solid #0050ff;
+        font-size: 1.2rem;        
+        cursor: pointer;    
+        transition: all .4s; 
+        
+        @include respond(tab-portrait) {
+            margin-left: 0;
+            background-color: #0050ff;
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            color: white;
+            border-radius: 2px; 
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }        
+
+    &__link:hover {
+        background-color: #0050ff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        color: white;
+        border-radius: 2px;         
+        transform: translateX(1rem);
+    }
+}
