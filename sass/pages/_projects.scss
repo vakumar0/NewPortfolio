@@ -1,0 +1,21 @@
+.project {
+    margin-top: 8rem;  
+    
+    &__image {
+
+        &--one {
+            background-image: url('/img/nat-7.jpg');
+            height: 200px;
+        }
+
+        &--two {
+            background-image: url('/img/nat-8.jpg');
+            height: 200px;
+        }
+    
+        &--three {
+            background-image: url('/img/nat-9.jpg');
+            height: 200px;
+        }
+    }    
+}

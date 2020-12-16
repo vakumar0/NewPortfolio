@@ -1,0 +1,44 @@
+.blue--square-box {
+    height: 15px;
+    width: 15px;
+    background-color: $color-primary-blue;  
+    margin: 1.1rem;    
+
+    @include respond(tab-portrait) {
+        height: 12px;
+        width: 12px;
+        margin: 9px 5px 0px 0px;                 
+    }
+}
+
+.blue {
+
+    &__line {
+        border-bottom: 2px solid $color-primary-blue;
+    width: 50px;
+
+        &--center {
+            margin: 1.5rem auto;
+        }
+    }    
+}
+
+.background-beige {
+    background-color: $color-primary-beige;   
+}
+
+.box-shadow {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15)
+}
+
+.padding-narrow {
+    padding: $padding-narrow;
+}
+
+.padding-normal {
+    padding: $padding-normal;
+}
+
+.padding-large {
+    padding: $padding-large;
+}

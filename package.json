@@ -1,0 +1,22 @@
+{
+  "name": "newportfolio",
+  "version": "1.0.0",
+  "description": "Vaibhav's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vakumar0/NewPortfolio.git"
+  },
+  "author": "Vaibhav Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vakumar0/NewPortfolio/issues"
+  },
+  "homepage": "https://github.com/vakumar0/NewPortfolio#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,91 @@
+.row {     
+    margin: 0 auto;                   
+    @include clearFix; 
+    
+    @include respond(tab-portrait) {        
+        width: calc((100% - #{$gutter-horizontal-wide}));   
+        margin-left: 10rem;         
+        margin-right: 0;                 
+    }  
+    
+    @include respond(phone) {        
+        width: calc((100% - #{$gutter-horizontal-small}));   
+        margin-left: 3rem;         
+        margin-right: 0;                 
+    }  
+    
+    .col-1-of-1 {                
+        width: 100%;        
+        float: left;           
+        @include clearFix; 
+        margin-bottom: $gutter-vertical-large;
+        display: inline-flex;
+    }
+
+    .col-1-of-2 {                
+        width: calc(90% / 2);        
+        float: left;           
+        @include clearFix; 
+        margin-bottom: $gutter-vertical-large;        
+        margin-top: 15rem;
+
+        @include respond(tab-portrait) {
+            width: 100%;            
+            margin-top: 3rem;
+            
+        }       
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);     
+        float: left;   
+        margin-bottom: $gutter-vertical-large;
+        @include clearFix;
+            
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }        
+        
+        @include respond(tab-portrait) {
+            width: calc((100% - 2 * #{$gutter-horizontal}));
+            margin-left: 10rem;
+        }
+        
+        @include respond(phone) {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &--normal {
+        max-width: $grid-max-width-normal;
+    }
+
+    &--wide {
+        max-width: $grid-max-width-wide;
+    }
+}
+
+.orangered {
+    background-color: orangered;
+    height: 100px;
+}
+
+.olivedrab {
+    background-color: olivedrab;
+    height: 100px;
+}
+
+.blue {
+    background-color: #0050ff;
+    height: 100px;
+}
+
+.primary-beige {
+    background-color: $color-primary-beige;
+}
+
+.primary-beige-light {
+    background-color: $color-primary-beige-light;
+}

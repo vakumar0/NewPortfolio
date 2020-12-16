@@ -1,0 +1,84 @@
+.header {    
+
+    &__heroSection {
+        height: 80vh;
+    }
+
+    &__nav {
+        @include clearFix;
+    }
+
+    &__card--designation {
+        letter-spacing: 3px;
+        margin-bottom: 4rem;
+    }
+
+    &__leftSection {
+        padding: 2rem;
+        float: left;    
+    }
+
+    &__name {
+        display: inline-flex;
+
+        &--designation {
+            margin-left: 3rem;
+
+            @include respond(tab-portrait) {
+                margin-left: 2rem;
+            }
+        }        
+    }
+
+    &__rightSection {
+        float: right;        
+    }    
+
+    &__image {
+        height: 16rem;
+        width: 16rem;
+        border-radius: 100rem;
+        background-color: #777;
+        margin: 3rem auto;
+    }
+
+    &__social-media {
+        background-color: $color-white;
+        height: 5rem;
+    }
+
+    &__description {
+        padding: $padding-normal;
+
+        @include respond (tab-portrait) {
+            padding: $padding-narrow;  
+            padding-top: 0;      
+        }
+
+        &--hello {
+            font-size: 8rem;
+
+            @include respond(tab-portrait) {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    &__social-media {
+        & ul {
+            list-style: none;
+            text-align: center;
+            padding-top: 1rem;
+
+            & li {
+                display: inline;
+                font-size: 2rem;
+                padding: 0 3rem;
+
+                @include respond(tab-portrait) {
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+}
