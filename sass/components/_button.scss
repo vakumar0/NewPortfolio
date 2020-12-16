@@ -1,6 +1,6 @@
 .button {
 
-    &__link {
+    &__link, &__link:visited {
         display: inline-flex;
         padding: .5rem 1rem;   
         margin-left: 3rem;        

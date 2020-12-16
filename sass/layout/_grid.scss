@@ -72,6 +72,10 @@
     &--wide {
         max-width: $grid-max-width-wide;
     }
+
+    &--narrow {
+        max-width: $grid-max-width-narrow;
+    }
 }
 
 .orangered {

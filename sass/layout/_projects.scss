@@ -5,7 +5,7 @@
 
         &--image {
             height: 10rem;
-            width: 10rem;
+            width: 15rem;
             border-radius: 100rem;
             background-color: olivedrab;
             margin: auto;
@@ -41,6 +41,12 @@
         }
 
         &--image3 {
+            background-image: url(/img/travel.JPG);
+            background-size: cover;
+            background-position: center;
+        }
+
+        &--image4 {
             background-image: url(/img/hackathon.JPG);
             background-size: cover;
             background-position: center;

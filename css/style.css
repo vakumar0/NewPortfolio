@@ -17,6 +17,10 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 400; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700; }
@@ -38,6 +42,20 @@ p {
   text-align: center;
   margin: 0; }
 
+.list-font {
+  font-size: 4rem !important;
+  font-family: fantasy, sans-serif; }
+  @media screen and (max-width: 56.25em) {
+    .list-font {
+      font-size: 2rem !important; } }
+
+.align-right {
+  float: right; }
+  .align-right::after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .blue--square-box {
   height: 15px;
   width: 15px;
@@ -51,7 +69,8 @@ p {
 
 .blue__line {
   border-bottom: 2px solid #0050ff;
-  width: 50px; }
+  width: 70px;
+  margin-right: 1rem; }
   .blue__line--center {
     margin: 1.5rem auto; }
 
@@ -82,7 +101,7 @@ p {
     .margin--narrow {
       margin: 1rem auto !important; } }
 
-.button__link {
+.button__link, .button__link:visited {
   display: inline-flex;
   padding: .5rem 1rem;
   margin-left: 3rem;
@@ -91,13 +110,13 @@ p {
   cursor: pointer;
   transition: all .4s; }
   @media screen and (max-width: 56.25em) {
-    .button__link {
+    .button__link, .button__link:visited {
       margin-left: 0;
       background-color: #0050ff;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       color: white;
       border-radius: 2px; }
-      .button__link:not(:last-child) {
+      .button__link:not(:last-child), .button__link:visited:not(:last-child) {
         margin-right: 2rem; } }
 
 .button__link:hover {
@@ -172,6 +191,8 @@ p {
     max-width: 80rem; }
   .row--wide {
     max-width: 114rem; }
+  .row--narrow {
+    max-width: 70rem; }
 
 .orangered {
   background-color: orangered;
@@ -242,7 +263,7 @@ p {
   height: 5rem; }
 
 .header__description {
-  padding: 5rem; }
+  padding: 5rem 0 5rem 5rem; }
   @media screen and (max-width: 56.25em) {
     .header__description {
       padding: 2rem;
@@ -260,7 +281,8 @@ p {
   .header__social-media ul li {
     display: inline;
     font-size: 2rem;
-    padding: 0 3rem; }
+    padding: 0 3rem;
+    cursor: pointer; }
     @media screen and (max-width: 56.25em) {
       .header__social-media ul li {
         padding: 0 2rem; } }
@@ -269,7 +291,7 @@ p {
   margin-top: 8rem; }
   .project__card--image {
     height: 10rem;
-    width: 10rem;
+    width: 15rem;
     border-radius: 100rem;
     background-color: olivedrab;
     margin: auto; }
@@ -288,15 +310,41 @@ p {
     background-size: cover;
     background-position: center; }
   .project__card--image3 {
+    background-image: url(/img/travel.JPG);
+    background-size: cover;
+    background-position: center; }
+  .project__card--image4 {
     background-image: url(/img/hackathon.JPG);
     background-size: cover;
     background-position: center; }
 
-.work-experience__card--title {
-  padding: 2rem 0 0 2rem; }
+.work-experience {
+  margin-top: 15rem; }
+  @media screen and (max-width: 56.25em) {
+    .work-experience {
+      margin-top: 4rem; } }
+  .work-experience__card--title {
+    padding: 2rem 0 0 2rem;
+    color: #0050ff; }
+  .work-experience__card--sub-title {
+    padding: 0 0 0 2rem; }
+  .work-experience__card--info {
+    margin: 2rem 3rem; }
 
-.work-experience__card--sub-title {
-  padding: 0 0 0 2rem; }
-
-.work-experience__card--info {
-  margin: 2rem 3rem; }
+.skills {
+  background-color: #0050ff;
+  color: #fff;
+  margin-top: 15rem; }
+  @media screen and (max-width: 56.25em) {
+    .skills {
+      margin-top: 4rem; } }
+  .skills ul {
+    list-style: none; }
+    .skills ul li {
+      display: inline-block;
+      font-size: 5rem;
+      padding: 2rem 5rem; }
+      @media screen and (max-width: 56.25em) {
+        .skills ul li {
+          font-size: 3rem;
+          padding: 2rem 3rem; } }

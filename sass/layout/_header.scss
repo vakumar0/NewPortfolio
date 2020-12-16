@@ -51,7 +51,8 @@
     }
 
     &__description {
-        padding: $padding-normal;
+        // padding: $padding-normal;
+        padding: 5rem 0 5rem 5rem;
 
         @include respond (tab-portrait) {
             padding: $padding-narrow;  
@@ -67,7 +68,7 @@
         }
     }
 
-    &__social-media {
+    &__social-media {        
         & ul {
             list-style: none;
             text-align: center;
@@ -77,6 +78,7 @@
                 display: inline;
                 font-size: 2rem;
                 padding: 0 3rem;
+                cursor: pointer;
 
                 @include respond(tab-portrait) {
                     padding: 0 2rem;

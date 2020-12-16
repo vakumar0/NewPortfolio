@@ -15,7 +15,8 @@
 
     &__line {
         border-bottom: 2px solid $color-primary-blue;
-    width: 50px;
+        width: 70px;
+        margin-right: 1rem;
 
         &--center {
             margin: 1.5rem auto;
@@ -33,6 +34,12 @@
 
 .background-beige {
     background-color: $color-primary-beige;   
+    // background-image: linear-gradient(to right, $color-primary-beige, #fff, transparent);
+
+    // @include respond(tab-portrait) {
+    //     background-image: none;
+    //     background-color: $color-primary-beige;   
+    // }
 }
 
 .box-shadow {
