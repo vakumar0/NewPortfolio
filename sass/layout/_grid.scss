@@ -26,11 +26,11 @@
         width: calc(90% / 2);        
         float: left;           
         @include clearFix; 
-        margin-bottom: $gutter-vertical-large;                
+        margin-bottom: $gutter-vertical-large;     
 
         @include respond(tab-portrait) {
             width: 100%;            
-            margin-top: 3rem;
+            // margin-top: 3rem;
             
         }   
         
@@ -75,6 +75,19 @@
 
     &--narrow {
         max-width: $grid-max-width-narrow;
+    }
+
+    &--padding-top {
+        padding-top: 8rem;
+
+        @include respond(tab-portrait) {
+            padding-top: 5rem;
+        }
+
+        @include respond(phone) {
+            padding-top: 3rem;
+        }
+
     }
 }
 

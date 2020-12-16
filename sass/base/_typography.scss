@@ -9,7 +9,7 @@ h1 {
 
 h2 {
     font-size: 1.7rem;
-    font-weight: 700;
+    font-weight: 400;
 
     @include respond(tab-portrait) {
         font-size: 1.4rem;
