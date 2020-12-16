@@ -388,7 +388,9 @@ p {
     .skills ul li {
       display: inline-block;
       font-size: 5rem;
-      padding: 2rem 5rem; }
+      padding: 2rem 3rem;
+      height: 10rem;
+      width: 12rem; }
       @media screen and (max-width: 56.25em) {
         .skills ul li {
           font-size: 3rem;
