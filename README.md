@@ -1,4 +1,4 @@
-# NewPortfolio
+# Portfolio
 This is my new portfolio which shares a general description of myself and a curated list of projects I have developed or have been a part of. This is a fully responsive website build using Sass and concepts like BEM and 7-1 in pattern. You can visit the website at https://vakumar-portfolio.netlify.app/
 
 ### About Me
