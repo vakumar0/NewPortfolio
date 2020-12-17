@@ -31,6 +31,16 @@
     opacity: 1;
     transform: translateY(0px); } }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px); }
+  25% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0px); } }
+
 *,
 *::after,
 *::before {
@@ -149,7 +159,7 @@ p {
       color: white;
       border-radius: 2px; }
       .button__link:not(:last-child), .button__link:visited:not(:last-child) {
-        margin-right: 2rem; } }
+        margin-right: 1rem; } }
 
 .button__link:hover {
   background-color: #0050ff;
@@ -297,6 +307,10 @@ p {
 .header__social-media {
   background-color: #fff;
   height: 5rem; }
+  .header__social-media--link {
+    transition: transform .3s ease-out; }
+    .header__social-media--link:hover {
+      transform: translateY(-5px); }
 
 .header__description {
   padding: 5rem 0 5rem 5rem; }
@@ -326,7 +340,10 @@ p {
 .project {
   margin-top: 8rem; }
   .project__card {
-    padding: 4rem 4rem 0 4rem; }
+    padding: 4rem 4rem 0 4rem;
+    transition: transform .3s ease-out; }
+    .project__card:hover {
+      transform: translateY(-10px); }
     @media screen and (max-width: 56.25em) {
       .project__card {
         padding: 4rem 1rem 0 1rem; } }
@@ -364,17 +381,21 @@ p {
       background-position: center; }
 
 .work-experience {
-  margin-top: 15rem; }
+  margin-top: 12rem; }
   @media screen and (max-width: 56.25em) {
     .work-experience {
       margin-top: 4rem; } }
-  .work-experience__card--title {
-    padding: 2rem 0 0 2rem;
-    color: #0050ff; }
-  .work-experience__card--sub-title {
-    padding: 0 0 0 2rem; }
-  .work-experience__card--info {
-    margin: 2rem 3rem; }
+  .work-experience__card {
+    transition: transform .3s ease-out; }
+    .work-experience__card:hover {
+      transform: translateY(-10px); }
+    .work-experience__card--title {
+      padding: 2rem 0 0 2rem;
+      color: #0050ff; }
+    .work-experience__card--sub-title {
+      padding: 0 0 0 2rem; }
+    .work-experience__card--info {
+      margin: 2rem 3rem; }
 
 .skills {
   background-color: #e6dace;
@@ -397,3 +418,21 @@ p {
           padding: 2rem 3rem;
           height: 8rem;
           width: 10rem; } }
+
+.awards {
+  margin-top: 12rem;
+  text-align: center;
+  cursor: pointer; }
+  @media screen and (max-width: 56.25em) {
+    .awards {
+      margin-top: 4rem; } }
+  .awards__icon {
+    font-size: 3rem;
+    padding-right: 2rem;
+    color: #8bb38f;
+    backface-visibility: hidden; }
+    .awards__icon:hover {
+      transition: all ease;
+      animation: bounce 2s; }
+  .awards__row {
+    display: inline-flex; }

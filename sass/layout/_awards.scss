@@ -1,0 +1,23 @@
+.awards {
+    
+    @include marginTop;
+
+    text-align: center;
+    cursor: pointer;
+
+    &__icon {
+        font-size: 3rem;
+        padding-right: 2rem;
+        color: #8bb38f;
+        backface-visibility: hidden;
+
+        &:hover {
+            transition: all ease;
+            animation: bounce 2s;
+        }
+    }
+
+    &__row {
+        display: inline-flex;
+    }
+}

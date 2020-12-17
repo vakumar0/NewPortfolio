@@ -1,9 +1,5 @@
 .header {    
 
-    // &__heroSection {
-    //     height: 80vh;
-    // }
-
     &__nav {
         @include clearFix;
     }
@@ -15,8 +11,7 @@
 
     &__leftSection {
         padding: 2rem;
-        float: left;  
-        //animation: name duration timing-function delay iteration-count direction fill-mode;          
+        float: left;        
     }
 
     &__name {
@@ -49,10 +44,17 @@
     &__social-media {
         background-color: $color-white;
         height: 5rem;
+
+        &--link {
+            transition: transform .3s ease-out;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }        
     }
 
     &__description {
-        // padding: $padding-normal;
         padding: 5rem 0 5rem 5rem;
 
         @include respond (tab-portrait) {

@@ -24,3 +24,11 @@
         @media screen and ( max-width: 112.5em ) { @content }; //1800px
     }
 }
+
+@mixin marginTop {
+    margin-top: 12rem;
+
+    @include respond(tab-portrait){
+        margin-top: 4rem;
+    }
+}
