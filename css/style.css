@@ -81,8 +81,8 @@ p {
   margin: 0; }
 
 .list-font {
-  font-size: 4rem !important;
-  font-family: fantasy, sans-serif; }
+  font-size: 3.5rem !important;
+  font-weight: 700; }
   @media screen and (max-width: 56.25em) {
     .list-font {
       font-size: 2rem !important; } }
